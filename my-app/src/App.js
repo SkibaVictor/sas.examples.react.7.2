@@ -1,5 +1,6 @@
 import React from 'react';
-import News from './components/news/news.jsx';
+import News from './components/news/news';
+import AddNews from './components/news/addNews';
 
 function App(props) {
   return (
@@ -7,10 +8,13 @@ function App(props) {
       <section className="container">
         <div className="row">
           <div className="col-12" id="clock_id">
+            <AddNews 
+            title={props.data.newsAddData.title}
+            content={props.data.newsAddData.content}
+            dispatch={props.dispatch}/>
             <News news={props.data.news} 
             orderMessage={props.data.orderMessage}
-            orderAsc={props.orderAsc} 
-            orderDesc={props.orderDesc}/>
+            dispatch={props.dispatch} />
           </div>
         </div>
       </section>

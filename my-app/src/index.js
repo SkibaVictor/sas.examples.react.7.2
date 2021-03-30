@@ -7,8 +7,7 @@ import store from './store/store';
 function renderAll() {
   ReactDOM.render(
     <App data={store.getState()} 
-    orderAsc={store.orderAsc.bind(store)} 
-    orderDesc={store.orderDesc.bind(store)}/>,
+    dispatch={store.dispatch.bind(store)} />,
     document.getElementById('root')
   );
 }
