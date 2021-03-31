@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsItem from '../newsItem/newsItem';
-import { orderAscActionCreator, orderDescActionCreator } from '../../store/store';
+import { orderAscActionCreator, orderDescActionCreator } from '../../store/newsReducer';
 
 class News extends React.Component {
   constructor(props) {

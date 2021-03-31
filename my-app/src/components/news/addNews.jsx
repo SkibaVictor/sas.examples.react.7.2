@@ -1,5 +1,5 @@
 import React from 'react';
-import { addNewsActionCreator, updateNewsDataActionCreator } from '../../store/store';
+import { addNewsActionCreator, updateNewsDataActionCreator } from '../../store/newsReducer';
 
 class AddNews extends React.Component {
     constructor(props) {

@@ -6,7 +6,7 @@ import store from './store/store';
 
 function renderAll() {
   ReactDOM.render(
-    <App data={store.getState()} 
+    <App data={store.getState().newsPage} 
     dispatch={store.dispatch.bind(store)} />,
     document.getElementById('root')
   );
